@@ -1,0 +1,253 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+
+<mat-card class="quiz-container">
+  <div class="questions-container">
+    <div *ngFor="let item of quiz; let i = index" class="questions">
+      <div class="question-text">Question {{i+1}}: {{item.question}}</div>
+      <div *ngFor="let answer of item.answers; let num = index" class="answer"></div>
+      <mat-radio-button class="answer-radio">{{answer['a' + num]}}</mat-radio-button>
+    </div>
+    </div>
+
+                                    <!--HTML & CSS Quiz-->
+    <h1>HTML & CSS Quiz</h1>
+      <br>
+  
+      <h6>1:</h6>
+    <mat-radio-group>
+      <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+      <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+      <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+      <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group> 
+        <br>
+      <h6>2:</h6>
+      <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>3:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>4:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>5:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>6:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>7:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>8:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>9:</h6>
+      <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>10:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br><br/>
+                                  <!--Interface Design Quiz-->
+    <h1>Interface Design Quiz</h1>
+      <br>
+      <h6>1:</h6>
+    <mat-radio-group>
+      <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+      <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+      <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+      <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group> 
+        <br>
+      <h6>2:</h6>
+      <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>3:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>4:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>5:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>6:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>7:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>8:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>9:</h6>
+      <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br>
+      <h6>10:</h6>
+    <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+    </mat-radio-group>
+        <br><br/>
+                                          <!--DevOps: Continuous Integration Quiz-->
+    <h1>DevOps: Continuous Integration Quiz</h1>
+      <br>
+      <h6>1:</h6>
+      <mat-radio-group>
+        <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+        <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+        <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+        <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+      </mat-radio-group> 
+          <br>
+        <h6>2:</h6>
+        <mat-radio-group>
+          <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+          <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+          <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+          <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+      </mat-radio-group>
+          <br>
+        <h6>3:</h6>
+      <mat-radio-group>
+          <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+          <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+          <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+          <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+      </mat-radio-group>
+          <br>
+        <h6>4:</h6>
+      <mat-radio-group>
+          <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+          <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+      </mat-radio-group>
+          <br>
+        <h6>5:</h6>
+      <mat-radio-group>
+          <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+          <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+          <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+          <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+      </mat-radio-group>
+          <br>
+        <h6>6:</h6>
+      <mat-radio-group>
+          <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+          <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+          <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+          <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+      </mat-radio-group>
+          <br>
+        <h6>7:</h6>
+      <mat-radio-group>
+          <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+          <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+          <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+          <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+      </mat-radio-group>
+          <br>
+        <h6>8:</h6>
+      <mat-radio-group>
+          <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+          <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+      </mat-radio-group>
+          <br>
+        <h6>9:</h6>
+        <mat-radio-group>
+          <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+          <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+          <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+          <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+      </mat-radio-group>
+          <br>
+        <h6>10:</h6>
+      <mat-radio-group>
+          <mat-radio-button name="first" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+          <mat-radio-button name="second" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+          <mat-radio-button name="third" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+          <mat-radio-button name="fourth" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+      </mat-radio-group>
+          <br><br/>
+
+        <button routerLink = "/results" mat-raised-button class="btn-submit" color="warn">Submit Quiz</button>
+      </mat-card>
+</form>

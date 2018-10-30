@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+
+  <!--Home Button-->
+  <button mat-flat-button routerLink="/quiz-selector">Home</button>
+  <mat-menu #menu="matMenu">
+  </mat-menu>
+
+<!--About Link-->
+  <button mat-flat-button class="mat-button"><a href=" https://mhoward14.github.io">About</a></button>
+
+<!--Quizzes Button-->
+<button mat-flat-button routerLink="/quiz-selector">Quizzes</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item><a mat-list-item href="#">HTML & CSS</a></button>
+  <button mat-menu-item><a mat-list-item href="#">Interface Design</a></button>
+  <button mat-menu-item><a mat-list-item href="#">DevOps</a></button>
+</mat-menu>
+
+<!--Presentations-->
+<button mat-flat-button routerLink="/presentations">Presentations</button>
+<mat-menu #menu="matMenu">
+</mat-menu>
+
+
+<!--Profile Icon-->
+<button mat-flat-button [matMenuTriggerFor]="menu">Profile</button>
+  <mat-menu #menu="matMenu">
+<button mat-flat-button routerLink="/sign-in">
+    <mat-icon>Logout</mat-icon>
+  </button>
+</mat-menu>
+
+</mat-toolbar>

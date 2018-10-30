@@ -1,0 +1,54 @@
+body{
+  font-size: 20px;
+  color: #333;
+  font-weight: 300;
+  text-align: center;
+  background-color: #f8f6f0;
+}
+h1{
+  font-weight: 200;
+  font-family: Quicksand;
+  margin: 0px;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  background-color: aquamarine;
+  color: #333;
+}
+
+.mat-btn-submit{
+  font-size: auto;
+  background-color: dodgerblue;
+  color: #fff;
+  border: 0px;
+  position: absolute !important;
+}
+
+button:hover{
+    background-color: rgb(0, 255, 166);
+    color: black;
+}
+
+.quiz-container{
+  font-family: Quicksand;
+  font-weight: 200;
+  font-size: 22px;
+  width: 60%;
+  position: absolute;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.mat-radio-button{
+  font-family: Quicksand;
+  font-weight: 200;
+  font-size: 22px;
+}
+
+h6{
+  font-family: Quicksand;
+  font-weight: 200;
+  font-size: 22px;
+}

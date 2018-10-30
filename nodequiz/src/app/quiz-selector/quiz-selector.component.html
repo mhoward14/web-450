@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <h2>Select Your Quiz</h2>
+  <div class="frm-quiz-selector">
+    <mat-card class="quiz-panel frm-quiz-selector">
+      <mat-card-header class="frm-quiz-header">
+      </mat-card-header>
+      <mat-card-content>
+      <form #f="ngForm" (ngSubmit)="onSubmit(f.value)"> 
+      <mat-radio-group name="group" [(ngModel)]="name">
+        <mat-radio-button value="1">HTML & CSS</mat-radio-button>
+        <br><br>
+        <mat-radio-button value="2">Interface Design</mat-radio-button>
+        <br><br>
+        <mat-radio-button value="3">DevOps: Continuous Integration</mat-radio-button>
+        <br><br>
+        <button mat-raised-button class="btn-submit" type="submit">Continue</button>
+        <!--routerLink = "/quiz"-->
+      </mat-radio-group>
+      </form>
+      </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
